@@ -32,6 +32,7 @@ A full-stack module developed using **React.js**, **Tailwind CSS**, **Node.js**,
 > 🖼️ UI Preview:
 > - Home, Dashboard, and Data Panels
 > - Live sensor data auto-refreshes every 3 minutes
+
 > 🔧 Login/Signup functionality is planned for future implementation.
 
 ---
