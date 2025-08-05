@@ -1,45 +1,46 @@
-# 🌱 Smart Hydroponics System using Digital Twin Technology
+# 🌿 Smart Hydroponics System using Digital Twin & IoT
 
-A full-stack smart irrigation and hydroponics system that leverages IoT sensors, a Digital Twin, real-time weather data, and automation to create a more efficient and sustainable farming method.
+An intelligent and sustainable hydroponic farming system that uses real-time sensor data, digital twin modeling, and AI-driven control to optimize plant growth.
 
-## 🚀 Project Overview
+## 📌 Project Overview
 
-This project focuses on automating hydroponic farming using sensors, a digital twin model, and a web interface. The goal is to collect real-time environmental data, simulate plant conditions, and trigger automated actions through connected actuators — all visualized via a dashboard.
+This project integrates sensors, actuators, a Raspberry Pi, and AWS Cloud (IoT Core, DynamoDB) to manage a smart hydroponic system. A digital twin continuously simulates plant growth and environmental conditions, enabling precision irrigation and nutrient delivery.
 
+---
 
+## 🧩 Key Modules
 
-## 🧩 Features
+### 🔷 1. Sensor & Actuator Integration
+- Collects real-time data from temperature, humidity, water level, wind, and air pressure sensors.
+- Automates actions via relay-controlled fan and pump using Raspberry Pi.
 
-### 🌐 Frontend (AgriTwin Web Interface)
-- Built using **React.js**, **Tailwind CSS**, and **OpenWeatherMap API**
-- Geolocation to fetch current weather conditions
-- Real-time dashboard for sensor data (temperature, humidity, wind, air pressure)
-- Modular pages:
-  - **Home:** Displays current weather + sensor data
-  - **About Us:** Explains hydroponics and automation process
-  - **Policy (Twin logic):** Verifies sensor status and recommends corrective action
-  - **Login/Sign up:** (Under development)
+### 🔷 2. Cloud Connectivity
+- Uses **AWS IoT Core** to send sensor data securely to the cloud.
+- Stores and visualizes data in **DynamoDB** for digital twin insights.
 
-### 🛠 Backend
-- Built using **Node.js** + **Express.js**
-- Stores and serves data using **MongoDB**
-- Backend auto-fetches data every 3 minutes for seamless frontend updates
-- MongoDB Compass is used for database visualization
+### 🔷 3. 🌐 Web Interface (AgriTwin / Irrigo Twin)
 
+A full-stack module developed using **React.js**, **Tailwind CSS**, **Node.js**, and **MongoDB** to visualize sensor data and weather conditions.
 
+#### Features:
+- **Geolocation-based Weather:** Integrated via OpenWeatherMap API.
+- **Sensor Dashboard:** Displays humidity, temperature, wind, and air pressure.
+- **About Page:** Explains hydroponics and system overview.
+- **Policy Page:** Shows digital twin logic and sensor health checks.
+- **Backend Server:** Built with Express.js and MongoDB (MongoDB Compass for GUI).
 
+> 🖼️ UI Preview:
+> - Home, Dashboard, and Data Panels
+> - Live sensor data auto-refreshes every 3 minutes
+> 🔧 Login/Signup functionality is planned for future implementation.
 
+---
 
-## 🧱 Tech Stack
+## 🛠 Tech Stack
 
-| Component        | Tech Used                  |
-|------------------|----------------------------|
-| Frontend         | React.js, Tailwind CSS     |
-| Backend          | Node.js, Express.js        |
-| Database         | MongoDB, MongoDB Compass   |
-| Weather API      | OpenWeatherMap             |
-| IoT Integration  | Raspberry Pi + Sensors     |
-| Automation       | Relay module (Fan + Pump)  |
-
+- **Hardware:** Raspberry Pi, Sensors (DHT11, pH, Water Level, etc.), Relay Module
+- **Backend:** AWS IoT Core, MongoDB, Express.js
+- **Frontend:** React.js, Tailwind CSS, OpenWeatherMap API
+- **Modeling:** AI/Digital Twin (Plant Growth Simulation)
 
 
