@@ -18,7 +18,7 @@ This project integrates sensors, actuators, a Raspberry Pi, and AWS Cloud (IoT C
 - Uses **AWS IoT Core** to send sensor data securely to the cloud.
 - Stores and visualizes data in **DynamoDB** for digital twin insights.
 
-### 🔷 3. 🌐 Web Interface (AgriTwin / Irrigo Twin)
+### 🔷 3. 🌐 Web Interface (IrrigoTwin)
 
 A full-stack module developed using **React.js**, **Tailwind CSS**, **Node.js**, and **MongoDB** to visualize sensor data and weather conditions.
 
