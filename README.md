@@ -39,9 +39,9 @@ A full-stack module developed using **React.js**, **Tailwind CSS**, **Node.js**,
 
 ## 🛠 Tech Stack
 
-- **Hardware:** Raspberry Pi, Sensors (DHT11, pH, Water Level, etc.), Relay Module
+- **Hardware:** Raspberry Pi, Sensors (DHT22, Water Level, Surface Temperature Controller, etc.), Relay Module, Analog-to-Digital Converter
 - **Backend:** AWS IoT Core, MongoDB, Express.js
 - **Frontend:** React.js, Tailwind CSS, OpenWeatherMap API
-- **Modeling:** AI/Digital Twin (Plant Growth Simulation)
+- **Modeling:** Digital Twin (Plant Growth Simulation)
 
 
